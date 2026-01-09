@@ -135,7 +135,7 @@ public class FrameMeteo extends javax.swing.JFrame {
             }
             br.close(); // Converte JSON → Oggetto Radice 
             Gson gson = new Gson();
-            Radice root = gson.fromJson(response.toString(), Radice.class); // Stampa alcuni dati 
+            Radice root = gson.fromJson(response.toString(), Radice.class);
             atxrisultato.setVisible(true);
             atxrisultato.setText("");
             atxrisultato.append("Citta: " + root.name + "\n");
