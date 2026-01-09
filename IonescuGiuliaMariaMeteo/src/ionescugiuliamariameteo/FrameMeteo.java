@@ -145,7 +145,7 @@ public class FrameMeteo extends javax.swing.JFrame {
             String iconCode = root.weather.get(0).icon;
             String iconUrl = "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
 
-            // Scarica l'immagine
+            // Prende l'immagine
             ImageIcon icon = new ImageIcon(new URL(iconUrl));
 
             // Se voglio ridimensionarla
