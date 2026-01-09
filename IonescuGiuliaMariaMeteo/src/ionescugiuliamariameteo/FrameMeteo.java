@@ -148,11 +148,11 @@ public class FrameMeteo extends javax.swing.JFrame {
             // Scarica l'immagine
             ImageIcon icon = new ImageIcon(new URL(iconUrl));
 
-            // Se vuoi ridimensionarla
+            // Se voglio ridimensionarla
             Image scaled = icon.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
             ImageIcon scaledIcon = new ImageIcon(scaled);
 
-            // Metti l'icona nella JLabel
+            // Mette l'icona nella JLabel
             lblIcona.setIcon(scaledIcon);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null,"C'é stato un errore nel cercare la cittá scelta, controllare di aver scritto bene","Errore",JOptionPane.ERROR_MESSAGE);
