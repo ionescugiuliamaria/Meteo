@@ -9,32 +9,12 @@ package ionescugiuliamariameteo;
  * @author giuli
  */
 public class Tempo {
-    public int id;
-    public String main;
     public String description;
     public String icon;
 
-    public Tempo(int id, String main, String description, String icon) {
-        this.id = id;
-        this.main = main;
+    public Tempo(String description, String icon) {
         this.description = description;
         this.icon = icon;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getMain() {
-        return main;
-    }
-
-    public void setMain(String main) {
-        this.main = main;
     }
 
     public String getDescription() {
