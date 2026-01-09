@@ -119,10 +119,10 @@ public class FrameMeteo extends javax.swing.JFrame {
     private void btncercaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncercaActionPerformed
         try {
             String apiKey = "d689285e408b211c2e279fa60fcf9dc5";
-            String city = txtcitta.getText();
+            String citta = txtcitta.getText();
             //OpenWeathere non accetta gli spazi, accenti e caratteri speciali, quindi si utilizza un endcoder così troviamo la città scelta
-            String encodedCity = URLEncoder.encode(city, StandardCharsets.UTF_8);
-            String urlString = "https://api.openweathermap.org/data/2.5/weather?q=" + encodedCity + "&appid=" + apiKey + "&units=metric&lang=it";
+            String encodedCitta = URLEncoder.encode(citta, StandardCharsets.UTF_8);
+            String urlString = "https://api.openweathermap.org/data/2.5/weather?q=" + encodedCitta + "&appid=" + apiKey + "&units=metric&lang=it";
             URL url = new URL(urlString);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
