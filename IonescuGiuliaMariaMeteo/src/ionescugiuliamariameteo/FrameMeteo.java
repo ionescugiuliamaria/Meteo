@@ -124,6 +124,7 @@ public class FrameMeteo extends javax.swing.JFrame {
             String encodedCitta = URLEncoder.encode(citta, StandardCharsets.UTF_8);
             String urlString = "https://api.openweathermap.org/data/2.5/weather?q=" + encodedCitta + "&appid=" + apiKey + "&units=metric&lang=it";
             URL url = new URL(urlString);
+            //HttpURLConnection si connette al sito web
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
